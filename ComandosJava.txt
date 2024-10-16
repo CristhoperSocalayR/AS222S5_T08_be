@@ -7,3 +7,4 @@
  docker push cris2003/chatbot
 Comando importantes:
 docker rmi 5e3a885219a3
+#nuevo conte
