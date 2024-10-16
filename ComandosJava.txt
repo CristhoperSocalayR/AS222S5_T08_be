@@ -8,3 +8,5 @@
 Comando importantes:
 docker rmi 5e3a885219a3
 #nuevo conte
+
+#Sonar cloud
