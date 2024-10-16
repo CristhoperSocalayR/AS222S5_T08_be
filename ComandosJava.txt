@@ -2,7 +2,7 @@
 2.- Comando para ejecutarlo:  java -jar target/ServicioCognitivo-0.0.1-SNAPSHOT.jar
 3.- Comandos para Docker:
  docker login
- docker build -t cris2003/chatbot .
+ docker build -t cris2003/gpt .
  docker run -d --name nombre_contenedor -p 8085:8085 cris2003/chatbot
  docker push cris2003/chatbot
 Comando importantes:

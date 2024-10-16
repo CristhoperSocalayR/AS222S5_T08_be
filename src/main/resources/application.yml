@@ -2,14 +2,13 @@ spring:
   application:
     name: Servicio
   r2dbc:
-    url: >-
-      r2dbc:postgresql://ep-flat-tree-a4k7we11.us-east-1.aws.neon.tech/Projects?sslmode=require
-    username: Projects_owner
-    password: RY4tKonU1zXQ
-
-    #url: ${DATABASE_URL}               # Variable de entorno para la URL de la base de datos
-    #username: ${DATABASE_USERNAME}     # Variable de entorno para el nombre de usuario
-    #password: ${DATABASE_PASSWORD}     # Variable de entorno para la contraseña
+    url: ${DATABASE_URL}               # Variable de entorno para la URL de la base de datos
+    username: ${DATABASE_USERNAME}     # Variable de entorno para el nombre de usuario
+    password: ${DATABASE_PASSWORD}     # Variable de entorno para la contraseña
+    
+    #url: >- r2dbc:postgresql://ep-flat-tree-a4k7we11.us-east-1.aws.neon.tech/Projects?sslmode=require
+    #username: Projects_owner
+    #password: RY4tKonU1zXQ
 server:
   port: 8085
 
