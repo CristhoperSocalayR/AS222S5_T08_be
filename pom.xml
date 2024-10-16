@@ -18,7 +18,9 @@
 
     <properties>
         <java.version>17</java.version>
-        <springdoc-openapi.version>2.2.0</springdoc-openapi.version> <!-- Actualiza según la última versión estable -->
+        <springdoc-openapi.version>2.2.0</springdoc-openapi.version>
+        <sonar.organization>cristhopersocalayr</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
@@ -93,11 +95,6 @@
             <version>1.0.0-beta.2</version>
         </dependency>
 
-        <properties>
-            <sonar.organization>cristhopersocalayr</sonar.organization>
-            <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        </properties>
-        
         <!-- Flyway for database migrations -->
         <dependency>
             <groupId>org.flywaydb</groupId>
