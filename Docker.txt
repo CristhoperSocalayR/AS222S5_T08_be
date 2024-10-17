@@ -6,6 +6,7 @@ docker run --name mycontenedor \
   -e DATABASE_PASSWORD=RY4tKonU1zXQ \
   -p 8085:8085 cris2003/chatbot
 
+nose 
 
 FROM openjdk:17
 WORKDIR /app
