@@ -21,6 +21,7 @@
         <springdoc-openapi.version>2.2.0</springdoc-openapi.version>
         <sonar.organization>cristhopersocalayr</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.projectKey>vallegrande.edu.pe:ServicioCognitivo</sonar.projectKey>
     </properties>
 
     <dependencies>
@@ -144,6 +145,13 @@
                         </exclude>
                     </excludes>
                 </configuration>
+            </plugin>
+
+            <!-- SonarCloud Maven Plugin -->
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>4.0.0.4121</version>
             </plugin>
 
             <!-- Maven Resources Plugin -->
