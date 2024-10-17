@@ -34,4 +34,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=CristhoperSocalayR_AS222S5_T08_be
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}   # URL de la base de datos
+          DATABASE_USERNAME: ${{ secrets.DATABASE_USERNAME }} # Nombre de usuario de la base de datos
+          DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }} # Contraseña de la base de datos
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
+          -Dsonar.projectKey=CristhoperSocalayR_AS222S5_T08_be
