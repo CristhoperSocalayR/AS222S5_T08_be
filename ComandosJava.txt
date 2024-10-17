@@ -4,7 +4,7 @@
  docker login
  docker build -t cris2003/gpt .
  docker run -d --name nombre_contenedor -p 8085:8085 cris2003/chatbot
- docker push cris2003/chatbot
+ docker push cris2003/gpt
 Comando importantes:
 docker rmi 5e3a885219a3
 #nuevo conte
