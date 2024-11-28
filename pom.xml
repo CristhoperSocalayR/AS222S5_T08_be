@@ -81,20 +81,7 @@
             <artifactId>jackson-databind</artifactId>
         </dependency>
 
-        <!-- Azure Identity for Azure AD Authentication -->
-        <dependency>
-            <groupId>com.azure</groupId>
-            <artifactId>azure-identity</artifactId>
-            <version>1.4.0</version>
-        </dependency>
-
-        <!-- Azure OpenAI SDK (optional) -->
-        <dependency>
-            <groupId>com.azure</groupId>
-            <artifactId>azure-ai-openai</artifactId>
-            <version>1.0.0-beta.2</version>
-        </dependency>
-
+        
         <!-- Flyway for database migrations -->
         <dependency>
             <groupId>org.flywaydb</groupId>
