@@ -31,4 +31,5 @@ public class SwaggerConfig implements WebFluxConfigurer {
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") 
                 .allowedHeaders("*") 
                 .allowCredentials(false);  
+    }
 }
