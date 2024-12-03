@@ -26,11 +26,9 @@ public class SwaggerConfig implements WebFluxConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        // Configuración de CORS más segura
-        registry.addMapping("/**")  // Permite todas las rutas
-                .allowedOrigins("https://turbo-broccoli-76q7x7rr977crgg5-4200.app.github.dev")  // Ajusta el origen a tu frontend
-                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")  // Métodos permitidos
-                .allowedHeaders("*")  // Permitir todos los headers
-                .allowCredentials(true);  // Permitir cookies si es necesario
-    }
+        registry.addMapping("/**")  
+                .allowedOrigins("*") 
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")  
+                .allowedHeaders("*")  
+                .allowCredentials(false);  
 }
