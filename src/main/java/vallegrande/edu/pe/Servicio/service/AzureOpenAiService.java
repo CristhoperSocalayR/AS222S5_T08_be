@@ -22,8 +22,8 @@ public class AzureOpenAiService {
     private final WebClient.Builder webClientBuilder;
     private final OpenAiQueryRepository repository;
 
-    private static final String AZURE_OPENAI_API_URL = "https://chatzire.openai.azure.com/openai/deployments/chatzito/chat/completions?api-version=2024-08-01-preview";
-    private static final String AZURE_API_KEY = "6fJm1noxSqiVJv11jLxybPn5CXZ5c71EzDwCDuF2e13QpWdRbxXtJQQJ99AKACYeBjFXJ3w3AAABACOGh013";
+    private static final String AZURE_OPENAI_API_URL = "https://gptcris2024.openai.azure.com/openai/deployments/crissocalay/chat/completions?api-version=2024-08-01-preview";
+    private static final String AZURE_API_KEY = "ADoalUNontEY8rxDm9xcRFNfEf8zWtZliasoqlQZd8muCm8S4ZnZJQQJ99ALACYeBjFXJ3w3AAABACOGLNOr";
 
     /**
      * Método para obtener la respuesta de Azure OpenAI y guardar solo el contenido de texto
