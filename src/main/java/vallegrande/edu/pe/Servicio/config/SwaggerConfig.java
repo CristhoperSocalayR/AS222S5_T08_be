@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.config.CorsRegistry;
 import org.springframework.web.reactive.config.WebFluxConfigurer;
 
-
 @Configuration
 public class SwaggerConfig implements WebFluxConfigurer {
 
@@ -19,7 +18,7 @@ public class SwaggerConfig implements WebFluxConfigurer {
                 .addServersItem(new Server().url("https://expert-train-wp6v4v999vphwgp-8085.app.github.dev/"))
                 .info(new Info()
                         .title("Oracle ATP Rest API")
-                        .description("Especificacion de REST API services")
+                        .description("Especificación de REST API services")
                         .license(new License().name("Valle Grande").url("https://vallegrande.edu.pe"))
                         .version("1.0.0")
                 );
@@ -27,9 +26,11 @@ public class SwaggerConfig implements WebFluxConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**") // Permitir todas las rutas
-                .allowedOrigins("*") // Permitir todas las orígenes (ajusta según tus necesidades)
-                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Métodos permitidos
-                .allowedHeaders("*"); // Permitir todos los headers
+        // Configuración de CORS más segura
+        registry.addMapping("/**")  // Permite todas las rutas
+                .allowedOrigins("https://turbo-broccoli-76q7x7rr977crgg5-4200.app.github.dev")  // Ajusta el origen a tu frontend
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")  // Métodos permitidos
+                .allowedHeaders("*")  // Permitir todos los headers
+                .allowCredentials(true);  // Permitir cookies si es necesario
     }
 }
