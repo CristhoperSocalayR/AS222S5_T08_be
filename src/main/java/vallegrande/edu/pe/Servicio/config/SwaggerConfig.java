@@ -15,7 +15,7 @@ public class SwaggerConfig implements WebFluxConfigurer {
     @Bean
     public OpenAPI apiInfo() {
         return new OpenAPI()
-                .addServersItem(new Server().url("https://turbo-broccoli-76q7x7rr977crgg5-8085.app.github.dev/"))
+                .addServersItem(new Server().url("https://turbo-broccoli-76q7x7rr977crgg5-8085.app.github.dev"))
                 .info(new Info()
                         .title("Oracle ATP Rest API")
                         .description("Especificación de REST API services")
