@@ -10,7 +10,7 @@ spring:
     #username: Projects_owner
     #password: RY4tKonU1zXQ
 server:
-  port: 8085
+  port: 8080
 
 
 # http://localhost:8085/swagger-ui.html (Swagger  Local)
